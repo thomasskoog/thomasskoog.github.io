@@ -22,7 +22,7 @@ nav ul {
 
 nav ul li {
   color: white;
-  font-family: "Futura LT Regular", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "Poiret One", "Futura LT Regular", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   text-align: center;
   list-style: none;
   display: inline-block;
@@ -41,17 +41,20 @@ main {
   height: 900px;
   margin: auto;
   background-color: #d3d3d3;
-  padding-top: 1px; }
+  padding-top: 1px;
+  overflow: auto; }
 
 .portfolio-bilder {
   margin: 1em;
-  border: 4px dotted black; }
+  border: 4px dotted black;
+  width: auto; }
 
 .ikoner {
   width: 100px;
   margin: 0 auto; }
 
 .ikoner p {
+  margin: 0 auto;
   width: 100px;
   padding: 0;
   text-align: center; }
@@ -67,7 +70,7 @@ main {
 
 h1 {
   color: white;
-  font-family: "Futura LT Regular", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "Poiret One", "Futura LT Regular", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   text-align: center; }
 
 a {
@@ -100,11 +103,11 @@ footer {
 
 footer p {
   color: white;
-  font-family: "Futura LT Regular", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-family: "Poiret One", "Futura LT Regular", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   text-align: center;
   padding-top: 10px; }
 
-.redarrow:after {
+.redarrow:before {
   content: ' ';
   position: absolute;
   height: 15px;
@@ -124,7 +127,8 @@ footer p {
     width: auto;
     height: auto;
     margin: auto;
-    padding-bottom: 6em; }
+    padding-bottom: 6em;
+    overflow: auto; }
 
   p {
     padding: 1em 3em 0 3em;
@@ -147,7 +151,7 @@ footer p {
     border: 2px solid #3e4053;
     padding-right: 0; }
 
-  .redarrow:after {
+  .redarrow:before {
     display: none; }
 
   main {
