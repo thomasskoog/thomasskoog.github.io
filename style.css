@@ -43,6 +43,23 @@ main {
   background-color: #d3d3d3;
   padding-top: 1px; }
 
+.portfolio-bilder {
+  margin: 1em;
+  border: 4px dotted black; }
+
+.ikoner {
+  width: 100px;
+  margin: 0 auto; }
+
+.ikoner p {
+  width: 100px;
+  padding: 0;
+  text-align: center; }
+
+.ikoner-kontakt {
+  margin: 1em auto;
+  width: 90px; }
+
 .fejs {
   margin: 0 3em 1em 3em;
   width: 20%;
@@ -92,8 +109,9 @@ footer p {
   position: absolute;
   height: 15px;
   width: 0;
-  border: 20px solid transparent;
-  border-bottom-color: #9d1521; }
+  border: 16px solid transparent;
+  border-bottom-color: #9d1521;
+  margin: 0 auto; }
 
 /* OBS: ├ändra om i css-strukturen s├Ñ att det ├ñr mobile first & media g├ñller f├Âr st├Ârre */
 /* ├även: Anv├ñnd min-width, inte max */
@@ -145,7 +163,6 @@ footer p {
 
   p {
     padding: 1em 3em 0 3em;
-    /* 10px 90px 0 50px; */
     margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */
