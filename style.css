@@ -1,4 +1,12 @@
-@charset "UTF-8";
+@font-face {
+  font-family: 'Poiret One';
+  src: url(PoiretOne-Regular.ttf); }
+@font-face {
+  font-family: 'Open Sans';
+  src: url(OpenSans-Regular.ttf); }
+.content {
+  max-width: 900px; }
+
 body {
   box-shadow: inset 0 0 0 2000px rgba(149, 150, 155, 0.7);
   background-image: url("giacomo_balla_-_velocity_of_cars_and_light,_1913_bw.jpg");
@@ -12,8 +20,7 @@ header {
   padding-top: 1%; }
 
 nav {
-  width: auto;
-  margin: 0 auto; }
+  width: auto; }
 
 nav ul {
   margin: 0 auto;
@@ -31,7 +38,15 @@ nav ul li {
 nav ul li:last-child {
   padding: 0; }
 
-.redline {
+.red-arrow:before {
+  content: ' ';
+  position: absolute;
+  height: 18px;
+  width: 0;
+  border: 16px solid transparent;
+  border-bottom-color: #9d1521; }
+
+.red-line {
   width: 100%;
   height: 10px;
   background-color: #9d1521; }
@@ -39,29 +54,9 @@ nav ul li:last-child {
 main {
   width: 900px;
   height: 900px;
-  margin: auto;
-  background-color: #d3d3d3;
-  padding-top: 1px;
-  overflow: auto; }
-
-.portfolio-bilder {
-  margin: 1em;
-  border: 4px dotted black;
-  width: auto; }
-
-.ikoner {
-  width: 100px;
-  margin: 0 auto; }
-
-.ikoner p {
   margin: 0 auto;
-  width: 100px;
-  padding: 0;
-  text-align: center; }
-
-.ikoner-kontakt {
-  margin: 1em auto;
-  width: 90px; }
+  background-color: #d3d3d3;
+  padding-top: 1px; }
 
 .fejs {
   margin: 0 3em 1em 3em;
@@ -71,7 +66,22 @@ main {
 h1 {
   color: white;
   font-family: "Poiret One", "Futura LT Regular", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-  text-align: center; }
+  text-align: center;
+  font-size: 3rem; }
+
+h1 a:hover, h1 a:focus {
+  color: white; }
+
+p, h3 {
+  font-family: "Open Sans", serif;
+  line-height: 1.5em; }
+
+h3 {
+  padding-left: 2.8rem;
+  font-size: 1.5em; }
+
+.text-om {
+  padding: 0 5em 1em 3em; }
 
 a {
   color: white;
@@ -83,19 +93,6 @@ a:hover, a:focus {
 a:active {
   color: #9d1521; }
 
-h1 a:hover, h1 a:focus {
-  color: white; }
-
-p, h3 {
-  font-family: monospace, serif; }
-
-p {
-  padding: 0 5em 1em 3em;
-  margin: auto; }
-
-h3 {
-  padding-left: 2.8em; }
-
 footer {
   background-color: #4b4d65;
   width: 100%;
@@ -105,41 +102,89 @@ footer p {
   color: white;
   font-family: "Poiret One", "Futura LT Regular", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   text-align: center;
-  padding-top: 10px; }
+  font-size: 1.5em;
+  margin: 0; }
 
-.redarrow:before {
-  content: ' ';
-  position: absolute;
-  height: 15px;
-  width: 0;
-  border: 16px solid transparent;
-  border-bottom-color: #9d1521;
+/*
+----------------------
+   portfolio.html
+----------------------
+*/
+.galleri {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 auto;
+  padding-left: 110px; }
+
+.galleri-bild {
+  float: left;
+  padding: 1em; }
+
+.p-list {
+  padding: 0;
   margin: 0 auto; }
 
-/* OBS: ├ändra om i css-strukturen s├Ñ att det ├ñr mobile first & media g├ñller f├Âr st├Ârre */
-/* ├även: Anv├ñnd min-width, inte max */
-/*=====================*/
-/*    MEDIA QUERIES    */
-/*=====================*/
+.portfo-bild {
+  margin: auto;
+  border: 2px solid grey;
+  padding: 3px;
+  width: 300px; }
+
+/*
+----------------------
+    kontakt.html
+----------------------
+*/
+.ikoner-alla {
+  width: 100px;
+  margin: 0 auto; }
+
+.ikon {
+  margin: 1em auto;
+  width: 90px; }
+
+/*
+======================
+ :: MEDIA QUERIES ::
+======================
+: breakpoint vid main :
+----------------------
+*/
 @media only screen and (min-width: 570px) and (max-width: 850px) {
-  /*896px = 56em // senare: (min-width:570px) and (max-width:720px)*/
+  .content {
+    max-width: 100%; }
+
   main {
     width: auto;
     height: auto;
     margin: auto;
-    padding-bottom: 6em;
-    overflow: auto; }
+    padding-bottom: 6em; }
 
   p {
-    padding: 1em 3em 0 3em;
+    /*padding: 1em 3em 0 3em;*/
     margin: auto; }
 
   .fejs {
     margin-left: 3em;
     width: 180px;
-    border-radius: 50%; } }
-/*=====================*/
+    border-radius: 50%; }
+
+  /*
+----------------------
+  : portfolio.html :
+----------------------
+*/
+  .galleri {
+    padding: auto; } }
+/*
+---------------------
+  :  mobilsize-ish :
+---------------------
+*/
 @media only screen and (min-width: 1px) and (max-width: 569px) {
+  .content {
+    max-width: 100%; }
+
   nav {
     position: fixed;
     bottom: 0;
@@ -151,7 +196,7 @@ footer p {
     border: 2px solid #3e4053;
     padding-right: 0; }
 
-  .redarrow:before {
+  .red-arrow:before {
     display: none; }
 
   main {
@@ -165,8 +210,24 @@ footer p {
     width: 180px;
     border-radius: 50%; }
 
+  h1 {
+    font-size: 2rem; }
+
   p {
-    padding: 1em 3em 0 3em;
-    margin: auto; } }
+    /*    padding: 1em 3em 0 3em;*/
+    margin: auto; }
+
+  /*
+----------------------
+   portfolio.html
+----------------------
+*/
+  .galleri {
+    padding: 1em; }
+
+  .portfo-bild {
+    padding: 3px;
+    border: 2px solid grey;
+    width: 90%; } }
 
 /*# sourceMappingURL=style.css.map */
