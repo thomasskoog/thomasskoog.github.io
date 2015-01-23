@@ -72,13 +72,14 @@ h1 {
 h1 a:hover, h1 a:focus {
   color: white; }
 
-p, h3 {
+p {
   font-family: "Open Sans", serif;
   line-height: 1.5em; }
 
 h3 {
+  font-family: "Poiret One", "Futura LT Regular", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   padding-left: 2.8rem;
-  font-size: 1.5em; }
+  font-size: 2em; }
 
 .text-om {
   padding: 0 5em 1em 3em; }
@@ -120,6 +121,11 @@ footer p {
   float: left;
   padding: 1em; }
 
+.galleri:after {
+  content: '';
+  display: block;
+  clear: both; }
+
 .p-list {
   padding: 0;
   margin: 0 auto; }
@@ -144,9 +150,9 @@ footer p {
   width: 90px; }
 
 /*
-======================
+===========================
  :: MEDIA QUERIES ::
-======================
+===========================
 : breakpoint vid main :
 ----------------------
 */
@@ -161,21 +167,12 @@ footer p {
     padding-bottom: 6em; }
 
   p {
-    /*padding: 1em 3em 0 3em;*/
     margin: auto; }
 
   .fejs {
     margin-left: 3em;
     width: 180px;
-    border-radius: 50%; }
-
-  /*
-----------------------
-  : portfolio.html :
-----------------------
-*/
-  .galleri {
-    padding: auto; } }
+    border-radius: 50%; } }
 /*
 ---------------------
   :  mobilsize-ish :
@@ -214,7 +211,6 @@ footer p {
     font-size: 2rem; }
 
   p {
-    /*    padding: 1em 3em 0 3em;*/
     margin: auto; }
 
   /*
