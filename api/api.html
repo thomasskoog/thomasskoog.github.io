@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>API-appen</title>
+    <link type="text/css" href="../normalize.css" rel="stylesheet">
+    <link type="text/css" href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="content">
+        <h1>En magisk API-app</h1>
+        <h2>(som hämtar från SoundCloud)</h2>
+
+        <div id="song">
+            <input type="text" id="inputSong">
+            <button id="playButton">Välj ett sökord!</button>
+            <div id="soundResult"></div>
+        </div>
+        <div id="user">
+            <input type="text" id="inputUser">
+            <button id="userButton">Hämta användare!</button>
+            <div id="userInfo"></div>
+        </div>
+        <p class="clear">&copy; 2015 Thomas Skoog</p>
+    </div>
+
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+    <script src="http://connect.soundcloud.com/sdk.js"></script>
+    <script src="soundcloudFunctions.js"></script>
+</body>
+</html>

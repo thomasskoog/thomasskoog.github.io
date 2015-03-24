@@ -19,9 +19,6 @@ header {
   width: 100%;
   padding-top: 1%; }
 
-nav {
-  width: auto; }
-
 nav ul {
   margin: 0 auto;
   text-align: center;
@@ -127,8 +124,11 @@ footer p {
   clear: both; }
 
 .p-list {
+  font-size: 0.8em;
   padding: 0;
-  margin: 0 auto; }
+  margin: 0 auto;
+  <!--width: 60px;-->
+}
 
 .portfo-bild {
   margin: auto;
