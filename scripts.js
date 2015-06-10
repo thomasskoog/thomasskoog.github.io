@@ -5,19 +5,20 @@
 //Hoppa mellan sidinnehåll
 
 document.addEventListener("click", function(e){
-   var valueButton = e.path[1].value;
+    var valueButton = e.target.className; //e.path[1].value;
+
    switch (valueButton){
-       case 0:
+       case "om":
            document.getElementById("articleOm").style.display = "";
            document.getElementById("articlePortfolio").style.display = "none";
            document.getElementById("articleKontakt").style.display = "none";
            break;
-       case 1:
+       case "port":
            document.getElementById("articleOm").style.display = "none";
            document.getElementById("articlePortfolio").style.display = "";
            document.getElementById("articleKontakt").style.display = "none";
            break;
-       case 2:
+       case "kontakt":
            document.getElementById("articleOm").style.display = "none";
            document.getElementById("articlePortfolio").style.display = "none";
            document.getElementById("articleKontakt").style.display = "";
