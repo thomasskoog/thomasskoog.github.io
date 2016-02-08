@@ -3,8 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="normalize.css" rel="stylesheet">
-    <link type="text/css" href="style.css" rel="stylesheet">
+    <link type="text/css" href="./css/normalize.css" rel="stylesheet">
+    <link type="text/css" href="./css/style.css" rel="stylesheet">
     <title>Thomas Skoog</title>
 </head>
 <body>
@@ -25,35 +25,48 @@
 
             <article id="articleOm">
                 <h3>Om mig</h3>
-                <img class="fejs" src="photo_567x567.jpg" alt="En bild på Thomas ansikte"/>
+                <img class="fejs" src="./assets/images/photo_567x567.jpg" alt="En bild på Thomas ansikte"/>
                 <p class="text-om"><em>Hej värld!</em></p>
                 <p class="text-om">Jag heter <strong>Thomas Skoog</strong> och jag har skapat denna sida som en del i min Frontend-utbildning på Nackademin. Den ska fungera som ett fönster mot världen där man ska kunna se arbetsuppgifter och projekt jag utfört, och min utveckling i allmänhet.</p>
                 <p class="text-om">Född 1987, uppvuxen i Vallentuna, men numera bosatt i Täby. Jag gick Bild & Form på estetprogrammet i gymnasiet, så mina intressen ligger närmare det grafiska snarare än det rent tekniska. Det är därför jag sökte mig till den här utbildningen, för sammanfoga dessa två områden. Jag kände att jag behövde fler praktiska färdigheter och kunskaper. Färdigheter som efterfrågas på en arbetsmarknad stadd i snabb utveckling och förändring. Just LIA-aspekten kändes väldigt relevant och lockande med denna utbildning.</p>
-                <!--<p class="text-om">Jag har ytterst ytliga programmeringskunskaper sedan tidigare, så det är något av ett mörklagt rum jag kastar mig in i. Tiden får utvisa om jag kommer ut levande.</p>-->
             </article>
 
             <article id="articlePortfolio">
                 <h3>Portfolio</h3>
                 <div class="galleri">
 
-                    <div class="galleri-bild"><a href="http://teaterrapid.se/" target="_blank"><img class="portfo-bild" src="teater_rapid_400.jpg" alt="En skärmdump på hemsidan"/></a>
+                    <div class="galleri-bild"><a href="http://teaterrapid.se/" target="_blank"><img class="portfo-bild" src="./assets/images/teater_rapid_400.jpg" alt="En skärmdump på hemsidan"/></a>
                     <p class="p-list"><strong>Hemsida för Teater Rapid.</strong><br>
                     Skapade en hemsida åt teatergruppen Teater Rapid <br>
                     tillsammans med Mikael Modig och Fredrik Löfgren.</p></div>
 
-                    <!-- <li class="galleri-bild"><a href="api.html"><img class="portfo-bild" src="klttr_feb-mar2013_399x399-1.jpg" alt="Konstiga krumelurer"/></a> -->
-                    <div class="galleri-bild"><a href="http://thomasskoog.github.io/api/api.html" target="_blank"><img class="portfo-bild" src="api_400.jpg" alt="API-app mot SoundCloud"/></a>
+                    <!--
+                    <div class="galleri-bild"><a href="http://thomasskoog.github.io/portApi/api.html" target="_blank"><img class="portfo-bild" src="./images/images/api_400.jpg" alt="API-app mot SoundCloud"/></a>
                     <p class="p-list"><strong>API-app.</strong><br>
                     Skapade en applikation som låter användaren <br>
                     söka på SoundCloud, både på taggar och användare.</p></div>
+                    -->
 
-                    <div class="galleri-bild"><a href="http://moving.mikaelmodig.se" target="_blank"><img class="portfo-bild" src="moving_400.jpg" alt="Spel med föremål, fiender och guldmynt i en fängelsehåla"/></a>
+                    <div class="galleri-bild"><a href="http://moving.mikaelmodig.se" target="_blank"><img class="portfo-bild" src="./assets/images/moving_400.jpg" alt="Spel med föremål, fiender och guldmynt i en fängelsehåla"/></a>
                     <p class="p-list"><strong>Dungeon Crawler.</strong><br>
-                    Pågående projekt. Ett spel där spelaren rör sig <br>
-                    igenom en array och samlar/manipulerar föremål.<br>
-                    Ett experiment i spelmekanik.<br>
+                    Vilande projekt. Ett spel där spelaren rör sig <br>
+                    igenom tunnlar och samlar/manipulerar föremål.<br>
+                    Ett experiment i spelmekanik skapad tillsammans <br>
+                    med Mikael Modig och Fredrik Löfgren.</p></div>
+
+                    <div class="galleri-bild"><a href="http://festivalx.mikaelmodig.se" target="_blank"><img class="portfo-bild" src="./assets/images/festivalx_400.jpg" alt="Spel med pixliga karaktärer som dansar på en åker"/></a>
+                    <p class="p-list"><strong>Festival X.</strong><br>
+                    Vilande projekt. Användaren kan gå mellan <br>
+                    dansgolven/åkrarna och lyssna på olika sorters musik.<br>
+                    Använder canvas, SoundClouds API, node.js, webpack.<br>
                     Skapad tillsammans med Mikael Modig och <br>
-                    Fredrik Löfgren.</p></div>
+                    Martin Törnqvist. </p></div>
+
+                    <div class="galleri-bild"><a href="http://thomasskoog.github.io/portTape/index.html" target="_blank"><img class="portfo-bild" src="./assets/images/tape_400.jpg" alt="API-app mot SoundCloud"/></a>
+                    <p class="p-list"><strong>A History of Tape.</strong><br>
+                    Infographic om kassettbandets historia.<br>
+                    Med tillbakaspolningsfunktion. <br>
+                    Använder jQuery och Skrollr.</p></div>
 
                 <!--<li class="galleri-bild"><img class="portfo-bild" src="klttr_grfkkrsn_tkn2_399x399.jpg" alt="Kvinna med hund"/>
                 <p class="p-list"><strong>Placeholder.</strong><br>
@@ -66,16 +79,16 @@
                 <h3>Kontakt</h3>
                 <div class="ikoner-alla">
                     <div class="ikon-text">
-                        <a href="mailto:thomas.skoog@gmail.com"><img class="ikon" src="ikon-mail-envelope.png" alt="Mail envelope"/><h2>thomas.skoog@gmail.com</h2></a>
+                        <a href="mailto:thomas.skoog@gmail.com"><img class="ikon" src="./assets/images/ikon-mail-envelope.png" alt="Mail envelope"/><h2>thomas.skoog@gmail.com</h2></a>
                     </div>
                     <br>
                     <div class="ikon-text">
-                        <a href="https://se.linkedin.com/in/thomasskoog"><img class="ikon" src="ikon-linkedin.png" alt="Linked In logo"/><h2>https://se.linkedin.com/in/thomasskoog</h2></a>
+                        <a href="https://se.linkedin.com/in/thomasskoog"><img class="ikon" src="./assets/images/ikon-linkedin.png" alt="Linked In logo"/><h2>https://se.linkedin.com/in/thomasskoog</h2></a>
                     </div>
                 </div>
                 <h3>CV</h3>
                 <div class="ikoner-alla">
-                    <a href="Thomas_Skoog_CV.pdf"><img class="ikon" id="cv" src="ikon-cv.png"><h2>thomas_skoog_cv.pdf</h2></a>
+                    <a href="./assets/Thomas_Skoog_CV.pdf"><img class="ikon" id="cv" src="./assets/images/ikon-cv.png"><h2>thomas_skoog_cv.pdf</h2></a>
                 </div>
             </article>
         </main>
@@ -83,6 +96,6 @@
         <footer>
             <p>&copy; 2015 Thomas Skoog</p>
         </footer>
-    <script src="scripts.js"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
