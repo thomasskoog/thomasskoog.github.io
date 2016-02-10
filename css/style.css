@@ -1,17 +1,17 @@
 ﻿@font-face {
   font-family: 'Poiret One';
-  src: url('./assets/PoiretOne-Regular.ttf');
+  src: url('../assets/PoiretOne-Regular.ttf');
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url('./assets/OpenSans-Regular.ttf');
+  src: url('../assets/OpenSans-Regular.ttf');
 }
 .content {
   max-width: 900px; }
 
 body {
   box-shadow: inset 0 0 0 2000px rgba(149, 150, 155, 0.7);
-  background-image: url('./assets/images/giacomo_balla_-_velocity_of_cars_and_light,_1913_bw.jpg');
+  background-image: url('../assets/images/giacomo_balla_-_velocity_of_cars_and_light,_1913_bw.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
