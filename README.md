@@ -1,3 +1,3 @@
 # http://thomasskoog.github.io
 
-## My portoflio page.
+## My portfolio page.
