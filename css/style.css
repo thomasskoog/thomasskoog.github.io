@@ -7,14 +7,16 @@
   src: url('../assets/OpenSans-Regular.ttf');
 }
 .content {
-  max-width: 900px; }
+  max-width: 900px;
+}
 
 body {
   box-shadow: inset 0 0 0 2000px rgba(149, 150, 155, 0.7);
   background-image: url('../assets/images/giacomo_balla_-_velocity_of_cars_and_light,_1913_bw.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+}
 
 .buttonNav {
     cursor: pointer;
@@ -23,12 +25,14 @@ body {
 header {
   background-color: #6a646a; /* #4b4d65 */
   width: 100%;
-  padding-top: 1%; }
+  padding-top: 1%;
+}
 
 nav ul {
   margin: 0 auto;
   text-align: center;
-  padding: 0; }
+  padding: 0;
+}
 
 nav ul li {
   color: white;
@@ -36,10 +40,12 @@ nav ul li {
   text-align: center;
   list-style: none;
   display: inline-block;
-  padding-right: 1em; }
+  padding-right: 1em;
+}
 
 nav ul li:last-child {
-  padding: 0; }
+  padding: 0;
+}
 
 .red-arrow:before {
   content: ' ';
@@ -47,67 +53,82 @@ nav ul li:last-child {
   height: 18px;
   width: 0;
   border: 16px solid transparent;
-  border-bottom-color: #9d1521; }
+  border-bottom-color: #9d1521;
+}
 
 .red-line {
   width: 100%;
   height: 10px;
-  background-color: #faa61e; }  /* orig red: #9d1521 */
+  background-color: #faa61e; /* orig red: #9d1521 */
+}
 
 main {
   width: 900px;
   height: 1000px;
   margin: 0 auto;
   background-color: #d3d3d3;
-  padding-top: 1px; }
+  padding-top: 1px;
+}
 
 .fejs {
   margin: 0 3em 1em 3em;
   width: 20%;
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 h1 {
   color: white;
   font-family: "Poiret One", "Futura LT Regular", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   text-align: center;
-  font-size: 3rem; }
+  font-size: 3rem;
+}
 
 h1 a:hover, h1 a:focus {
-  color: white; }
+  color: white;
+}
 
 p {
   font-family: "Open Sans", serif;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+}
 
 h3 {
   font-family: "Poiret One", "Futura LT Regular", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   padding-left: 2.8rem;
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 .text-om {
-  padding: 0 5em 1em 3em; }
+  padding: 0 5em 1em 3em;
+}
 
 a, a:visited {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 a:hover, a:focus {
-  color: grey; }
+  color: grey;
+}
 
 a:active {
-  color: #faa61e; }  /* orig dark red: #9d1521 */
+  color: #faa61e;   /* orig dark red: #9d1521 */
+}
+
 
 footer {
   background-color: #6a646a; /* #4b4d65 */
   width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 footer p {
   color: white;
   font-family: "Poiret One", "Futura LT Regular", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   text-align: center;
   font-size: 1.5em;
-  margin: 0; }
+  margin: 0;
+}
 
 /*
 ----------------------
@@ -148,7 +169,8 @@ footer p {
   margin: auto;
   border: 2px solid grey;
   padding: 3px;
-  width: 300px; }
+  width: 300px;
+}
 
 /*
 ----------------------
@@ -158,7 +180,8 @@ footer p {
 
 .ikoner-alla {
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .ikoner-alla h2 {
   display: inline-block;
@@ -206,21 +229,25 @@ footer p {
 */
 @media only screen and (min-width: 570px) and (max-width: 850px) {
   .content {
-    max-width: 100%; }
+    max-width: 100%;
+  }
 
   main {
     width: auto;
     height: auto;
     margin: auto;
-    padding-bottom: 6em; }
+    padding-bottom: 6em;
+  }
 
   p {
-    margin: auto; }
+    margin: auto;
+  }
 
   .fejs {
     margin-left: 3em;
     width: 180px;
-    border-radius: 50%; } }
+    border-radius: 50%; }
+}
 /*
 ---------------------
   :  mobilsize-ish :
@@ -228,51 +255,62 @@ footer p {
 */
 @media only screen and (min-width: 1px) and (max-width: 569px) {
   .content {
-    max-width: 100%; }
+    max-width: 100%;
+  }
 
   nav {
     position: fixed;
     bottom: 0;
-    width: 100%; }
+    width: 100%;
+  }
 
   nav ul li {
     display: block;
     background-color: #4b4d65;
     border: 2px solid #3e4053;
-    padding-right: 0; }
+    padding-right: 0;
+  }
 
   .red-arrow:before {
-    display: none; }
+    display: none;
+  }
 
   main {
     width: auto;
     height: auto;
     margin: auto;
-    padding-bottom: 15em; }
+    padding-bottom: 15em;
+  }
 
   .fejs {
     margin-left: 3em;
     width: 180px;
-    border-radius: 50%; }
+    border-radius: 50%;
+  }
 
   h1 {
-    font-size: 2rem; }
+    font-size: 2rem;
+  }
 
   p {
-    margin: auto; }
+    margin: auto;
+  }
 
   /*
-----------------------
-      portfolio
-----------------------
-*/
+  ----------------------
+        portfolio
+  ----------------------
+  */
   .galleri {
-    padding: 1em; }
+    padding: 1em;
+  }
 
   .portfo-bild {
     padding: 3px;
     border: 2px solid grey;
-    width: 90%; }
+    width: 90%;
+  }
+
 
 }
 
