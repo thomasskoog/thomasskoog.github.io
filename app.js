@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
 import './css/normalize.css';
 import './css/style.css';
 'use strict';
 
 const e = React.createElement;
 
-class App extends Component {
+class App extends React.Component {
   /*constructor(props) {
     super(props);
     this.state = { liked: false };
