@@ -1,4 +1,6 @@
 import React, { Component } from 'React';
+import './css/normalize.css';
+import './css/style.css';
 'use strict';
 
 const e = React.createElement;
