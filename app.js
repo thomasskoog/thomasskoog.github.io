@@ -14,7 +14,33 @@ class App extends Component {
   render() {
     /*if (this.state.liked) {
       return 'You liked this.';
-  }*/
+	}*/
+	
+		document.addEventListener("click", function(e){
+			var valueButton = e.target.className; //e.path[1].value;
+
+			switch (valueButton){
+					case "om":
+							document.getElementById("articleOm").style.display = "";
+							document.getElementById("articlePortfolio").style.display = "none";
+							document.getElementById("articleKontakt").style.display = "none";
+							break;
+					case "port":
+							document.getElementById("articleOm").style.display = "none";
+							document.getElementById("articlePortfolio").style.display = "";
+							document.getElementById("articleKontakt").style.display = "none";
+							break;
+					case "kontakt":
+							document.getElementById("articleOm").style.display = "none";
+							document.getElementById("articlePortfolio").style.display = "none";
+							document.getElementById("articleKontakt").style.display = "";
+							break;
+			}
+		});
+
+		document.getElementById("articleOm").style.display = "none";
+		document.getElementById("articlePortfolio").style.display = "";
+		document.getElementById("articleKontakt").style.display = "none";
 
     return (
 			<div>
@@ -95,6 +121,7 @@ class App extends Component {
         <footer>
             <p>&copy; 2016 Thomas Skoog</p>
         </footer>
+
 			</div>
     );
   }
