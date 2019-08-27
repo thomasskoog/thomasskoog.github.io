@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a52c05dd.chunk.css",
+    "main.js": "/static/js/main.69494073.chunk.js",
+    "main.js.map": "/static/js/main.69494073.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.bdb311c5.js",
+    "runtime~main.js.map": "/static/js/runtime~main.bdb311c5.js.map",
+    "static/js/2.550856e9.chunk.js": "/static/js/2.550856e9.chunk.js",
+    "static/js/2.550856e9.chunk.js.map": "/static/js/2.550856e9.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1617f127293e679b3143f61c8aa9f29a.js": "/precache-manifest.1617f127293e679b3143f61c8aa9f29a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a52c05dd.chunk.css.map": "/static/css/main.a52c05dd.chunk.css.map",
+    "static/media/App.css": "/static/media/giacomo_balla_-_velocity_of_cars_and_light,_1913_bw.d059dc8a.jpg",
+    "static/media/festivalx_400.jpg": "/static/media/festivalx_400.60a291bf.jpg",
+    "static/media/moving_400.jpg": "/static/media/moving_400.06958394.jpg",
+    "static/media/photo_567x567.jpg": "/static/media/photo_567x567.b2c9c9a4.jpg",
+    "static/media/tape_400.jpg": "/static/media/tape_400.70a90bb2.jpg",
+    "static/media/teater_rapid_400.jpg": "/static/media/teater_rapid_400.dc36a207.jpg"
+  }
+}
